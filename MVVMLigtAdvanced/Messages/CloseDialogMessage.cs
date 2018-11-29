@@ -8,5 +8,11 @@ namespace MVVMLigtAdvanced.Messages
 {
     class CloseDialogMessage
     {
+        public string WindowName;
+
+        public CloseDialogMessage(string v)
+        {
+            this.WindowName = v;
+        }
     }
 }

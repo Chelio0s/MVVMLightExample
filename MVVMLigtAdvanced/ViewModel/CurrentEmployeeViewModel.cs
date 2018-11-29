@@ -65,7 +65,7 @@ namespace MVVMLigtAdvanced.ViewModel
 
         private void CancelCommandExecute()
         {
-            Messenger.Default.Send<CloseDialogMessage, CurrentEmployeeView>(new CloseDialogMessage());
+            Messenger.Default.Send<CloseDialogMessage, CurrentEmployeeView>(new CloseDialogMessage("CurrentEmployeeView"));
         }
 
         private void SaveCommandExecute()
@@ -85,8 +85,9 @@ namespace MVVMLigtAdvanced.ViewModel
                 };
                 _repository.AddEntity(Employee);
             }
-
-            Messenger.Default.Send<CloseDialogMessage, CurrentEmployeeView>(new CloseDialogMessage());
+            var parentVM = SimpleIoc.Default.GetInstance<EmployeesViewModel>();
+            parentVM.RefreshData();
+            Messenger.Default.Send<CloseDialogMessage, CurrentEmployeeView>(new CloseDialogMessage("CurrentEmployeeView"));
         }
 
 

@@ -4,6 +4,8 @@ using GalaSoft.MvvmLight.Messaging;
 using MVVMLigtAdvanced.Models;
 using GalaSoft.MvvmLight.Command;
 using MVVMLigtAdvanced.Messages;
+using System.Linq;
+using System;
 
 namespace MVVMLigtAdvanced.ViewModel
 {
@@ -13,9 +15,13 @@ namespace MVVMLigtAdvanced.ViewModel
         private ListCollectionView employees;
         private IRepository _repository;
         private bool _isNew;
+        private Employee _currentEmployee;
 
         //properties
-        public Employee CurrentEmployee { get => Employees.CurrentItem as Employee; }
+        public Employee CurrentEmployee
+        {
+            get => Employees.CurrentItem as Employee;
+        }
         public bool IsNew { get => _isNew; set => _isNew = value; }
         public ListCollectionView Employees
         {
@@ -30,7 +36,7 @@ namespace MVVMLigtAdvanced.ViewModel
         //Комманды
         public RelayCommand ShowEmployeeViewCommand { private set; get; }
         public RelayCommand ShowNewEmployeeCommand { get; set; }
-
+        public RelayCommand CloseWindowCommand { get; set; }
 
         public EmployeesViewModel(IRepository repository)
         {
@@ -40,11 +46,15 @@ namespace MVVMLigtAdvanced.ViewModel
             //инициализация команды
             ShowEmployeeViewCommand = new RelayCommand(ShowEmployeeCommandExecute);
             ShowNewEmployeeCommand = new RelayCommand(ShowNewEmployeeCommandExecute);
-
+            CloseWindowCommand = new RelayCommand(CloseWindowCommandExecute);
             //messenger
 
         }
 
+        private void CloseWindowCommandExecute()
+        {
+            Messenger.Default.Send<CloseDialogMessage>(new CloseDialogMessage("EmployeesView"));
+        }
 
         private void ShowNewEmployeeCommandExecute()
         {
@@ -55,6 +65,12 @@ namespace MVVMLigtAdvanced.ViewModel
         {
             IsNew = false;
             Messenger.Default.Send<OpenDialogMessage>(new OpenDialogMessage("CurrentEmployeeView"));
+        }
+
+        internal void RefreshData()
+        {
+            var empCollection = _repository.GetEntityes<Employee>();
+            Employees = new ListCollectionView(empCollection);
         }
     }
 }

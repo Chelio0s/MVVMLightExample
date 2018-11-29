@@ -9,7 +9,12 @@
         DataContext="{Binding  Main, Source={StaticResource Locator}}"
         Title="" SizeToContent="Height" Width="300">
     <Window.Resources>
-        <ResourceDictionary Source="../ResourceDictionary/MainDictionary.xaml"></ResourceDictionary>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../ResourceDictionary/Icons.xaml"/>
+                <ResourceDictionary Source="../ResourceDictionary/MainDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -23,7 +28,9 @@
             <RowDefinition Height="Auto"></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <Button Style="{StaticResource ButtonStyle}" Command="{Binding OpenEmployeesViewCommand}">Сотрудники</Button>
-        <Button Style="{StaticResource ButtonStyle}" Command="{Binding OpenPostsViewCommand}" Grid.Row="1">Должности</Button>
+        <Button local:AttachedProperty.ImageDataSource="{StaticResource iconfinder_General_Office_32_3592856DrawingImage}" 
+                Style="{StaticResource ButtonStyle}" Command="{Binding OpenEmployeesViewCommand}">Сотрудники</Button>
+        <Button  local:AttachedProperty.ImageDataSource="{StaticResource iconfinder_General_Office_23_3592861DrawingImage}" 
+                 Style="{StaticResource ButtonStyle}" Command="{Binding OpenPostsViewCommand}" Grid.Row="1">Должности</Button>
     </Grid>
 </Window>

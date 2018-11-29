@@ -16,6 +16,12 @@ namespace MVVMLigtAdvanced.View
         {
             InitializeComponent();
             Messenger.Default.Register<OpenDialogMessage>(this, OpenDialogMessageHandler);
+            Messenger.Default.Register<CloseDialogMessage>(this, CloseDialogMessageHandler);
+        }
+
+        private void CloseDialogMessageHandler(CloseDialogMessage obj)
+        {
+            Close();
         }
 
         private void OpenDialogMessageHandler(OpenDialogMessage obj)

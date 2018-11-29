@@ -5,16 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         xmlns:command="http://www.galasoft.ch/mvvmlight"
+        xmlns:attach="clr-namespace:MVVMLigtAdvanced"
         mc:Ignorable="d"
         Title="Сотрудник" SizeToContent="WidthAndHeight"
         WindowStartupLocation="CenterOwner"
         DataContext="{Binding CurrentEmployee, Source={StaticResource Locator}}">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
-            <GradientStop Color="#FFFAFAFA" Offset="0.9"/>
-            <GradientStop Color="#FF09B8C2" Offset="0"/>
+            <GradientStop Color="#FFB4FBFF" Offset="1"/>
+            <GradientStop Color="#FFFAFAFA" Offset="0.8"/>
+            <GradientStop Color="#FFFAFAFA" Offset="0.4"/>
+            <GradientStop Color="#FFB4FBFF" Offset="0"/>
         </LinearGradientBrush>
     </Window.Background>
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../ResourceDictionary/Icons.xaml"/>
+                <ResourceDictionary Source="../ResourceDictionary/MainDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <command:EventToCommand Command="{Binding WindowActivatedCommand}" PassEventArgsToCommand="True" />
@@ -31,12 +42,14 @@
                 <ComboBox Margin="3" ItemsSource="{Binding Posts}" SelectedItem="{Binding Post, UpdateSourceTrigger=PropertyChanged}" Width="155" ></ComboBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Border CornerRadius="2" BorderBrush="DarkBlue" BorderThickness="1" Margin="4" Background="LightGray">
-                    <Button  Width="70" BorderThickness="0" Background="Transparent" Command="{Binding SaveCommand}">Сохранить</Button>
-                </Border>
-                <Border CornerRadius="2" BorderBrush="DarkBlue" BorderThickness="1" Margin="4" Background="LightGray">
-                    <Button  Width="70" BorderThickness="0" Background="Transparent" Command="{Binding CancelCommand}">Отмена</Button>
-                </Border>
+
+                <Button attach:AttachedProperty.ImageDataSource="{StaticResource iconfinder_JD_28_2246833DrawingImage}"  
+                        Style="{StaticResource ButtonStyle}" 
+                        Command="{Binding SaveCommand}">Сохранить</Button>
+                <Button attach:AttachedProperty.ImageDataSource="{StaticResource iconfinder_JD_03_2246826DrawingImage}"
+                        Style="{StaticResource ButtonStyle}" 
+                        Command="{Binding CancelCommand}">Отмена</Button>
+                
             </StackPanel>
         </StackPanel>
     </Grid>
