@@ -15,7 +15,7 @@ namespace MVVMLigtAdvanced.ViewModel
         private bool _isNew;
 
         //properties
-        public Employee CurrentEmployee111 { get => Employees.CurrentItem as Employee; }
+        public Employee CurrentEmployee { get => Employees.CurrentItem as Employee; }
         public bool IsNew { get => _isNew; set => _isNew = value; }
         public ListCollectionView Employees
         {

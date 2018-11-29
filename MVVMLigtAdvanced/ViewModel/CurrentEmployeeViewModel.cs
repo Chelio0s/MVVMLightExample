@@ -93,7 +93,7 @@ namespace MVVMLigtAdvanced.ViewModel
         private void WindowActivatedCommandExecute()
         {
             var parentVM = SimpleIoc.Default.GetInstance<EmployeesViewModel>();
-            Employee = parentVM.IsNew ? null : parentVM.CurrentEmployee111;
+            Employee = parentVM.IsNew ? null : parentVM.CurrentEmployee;
         }
     }
 }

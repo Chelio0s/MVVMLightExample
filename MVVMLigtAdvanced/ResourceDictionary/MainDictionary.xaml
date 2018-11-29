@@ -20,7 +20,9 @@
                             VerticalAlignment="Top"
                             Margin="1,3">
                      <StackPanel Orientation="Horizontal">
-                            <Image Source="{TemplateBinding local:AttachedProperty.ValueImageDataSource}" Height="30"></Image>
+                            <Image Source="{TemplateBinding local:AttachedProperty.ImageDataSource}" 
+                                   Height="30"
+                                   Margin="2,2,5,2" Width="30"></Image>
                             <ContentPresenter x:Name="contentPresenter" 
                                            Focusable="False" 
                                            HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
