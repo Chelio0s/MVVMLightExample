@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace MVVMLigtAdvanced.Models
 {
-    class Repository:IRepository
+    class Repository : IRepository
     {
         /// <summary>
         /// Метод выбора коллекции сущностей по указнному условию предиката
@@ -14,7 +16,7 @@ namespace MVVMLigtAdvanced.Models
         /// <returns></returns>
         public List<T> GetEntityes<T>(Func<T, bool> predicate) where T : class
         {
-            using (var context = new DBEntities())
+            using (var context = new DataContext())
             {
 
                 return context.Set<T>().Where(predicate).ToList();
@@ -27,7 +29,7 @@ namespace MVVMLigtAdvanced.Models
         /// <returns></returns>
         public List<T> GetEntityes<T>() where T : class
         {
-            using (var context = new DBEntities())
+            using (var context = new DataContext())
             {
                 var query = context.Set<T>();
                 switch (typeof(T).Name)
@@ -42,12 +44,13 @@ namespace MVVMLigtAdvanced.Models
         /// </summary>
         /// <typeparam name="T">Тип сущности</typeparam>
         /// <param name="entity">Объект сущности</param>
-        public T AddEntity<T>(T entity) where T : class
+        public EntityEntry<T>  AddEntity<T>(T entity) where T : class
         {
-            using (var context = new DBEntities())
+            using (var context = new DataContext())
             {
                 var adedEntity = context.Set<T>().Add(entity);
                 context.SaveChanges();
+                
                 return adedEntity;
             }
         }
@@ -60,10 +63,10 @@ namespace MVVMLigtAdvanced.Models
         {
             if (!string.IsNullOrEmpty(employee.Name) && employee.Post != null)
             {
-                using (var context = new DBEntities())
+                using (var context = new DataContext())
                 {
-                    var emp = context.Employees.FirstOrDefault(x => x.Id == employee.Id);
-                    var post = context.Posts.FirstOrDefault(x => x.Id == employee.Post.Id);
+                    var emp = context.Employee.FirstOrDefault(x=>x.Id ==employee.Id);
+                    var post = context.Post.FirstOrDefault(x => x.Id == employee.Post.Id);
                     if (emp != null)
                     {
                         emp.Name = employee.Name;

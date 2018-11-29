@@ -19,7 +19,7 @@ namespace MVVMLigtAdvanced.ViewModel
         private Employee _employee;
         private string _name;
         private Post _post;
-        
+
         //поля
         public string Name
         {
@@ -60,7 +60,7 @@ namespace MVVMLigtAdvanced.ViewModel
             SaveCommand = new RelayCommand(SaveCommandExecute);
             CancelCommand = new RelayCommand(CancelCommandExecute);
             //messenger
-           
+
         }
 
         private void CancelCommandExecute()
@@ -70,7 +70,7 @@ namespace MVVMLigtAdvanced.ViewModel
 
         private void SaveCommandExecute()
         {
-            if (Employee!=null)
+            if (Employee != null)
             {
                 Employee.Name = Name;
                 Employee.Post = Post;
@@ -93,7 +93,7 @@ namespace MVVMLigtAdvanced.ViewModel
         private void WindowActivatedCommandExecute()
         {
             var parentVM = SimpleIoc.Default.GetInstance<EmployeesViewModel>();
-            Employee = parentVM.IsNew ? null : parentVM.CurrentEmployee;
+            Employee = parentVM.IsNew ? null : parentVM.CurrentEmployee111;
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 
 namespace MVVMLigtAdvanced.Models
@@ -26,8 +27,13 @@ namespace MVVMLigtAdvanced.Models
         /// </summary>
         /// <typeparam name="T">Тип сущности</typeparam>
         /// <param name="entity">Объект сущности</param>
-        T AddEntity<T>(T entity) where T : class;
+        EntityEntry<T> AddEntity<T>(T entity) where T : class;
 
-        bool UpdateEmployee(Employee employee);
+        /// <summary>
+        /// Обновление сотрудника
+        /// </summary>
+        /// <param name="employee111"></param>
+        /// <returns></returns>
+        bool UpdateEmployee(Employee employee111);
     }
 }

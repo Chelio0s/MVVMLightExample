@@ -15,7 +15,7 @@ namespace MVVMLigtAdvanced.ViewModel
         private bool _isNew;
 
         //properties
-        public Employee CurrentEmployee { get => Employees.CurrentItem as Employee; }
+        public Employee CurrentEmployee111 { get => Employees.CurrentItem as Employee; }
         public bool IsNew { get => _isNew; set => _isNew = value; }
         public ListCollectionView Employees
         {
@@ -30,7 +30,7 @@ namespace MVVMLigtAdvanced.ViewModel
         //Комманды
         public RelayCommand ShowEmployeeViewCommand { private set; get; }
         public RelayCommand ShowNewEmployeeCommand { get; set; }
-      
+
 
         public EmployeesViewModel(IRepository repository)
         {
@@ -42,7 +42,7 @@ namespace MVVMLigtAdvanced.ViewModel
             ShowNewEmployeeCommand = new RelayCommand(ShowNewEmployeeCommandExecute);
 
             //messenger
-            
+
         }
 
 

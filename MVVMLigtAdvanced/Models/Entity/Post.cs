@@ -16,7 +16,7 @@ using System.Collections.Generic;
 
 namespace MVVMLigtAdvanced.Models
 {
-    partial class Post
+    public partial class Post
     {
         public override bool Equals(object obj)
         {
