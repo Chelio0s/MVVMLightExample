@@ -170,6 +170,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AttachedProperty.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\DataContext.cs" />
     <Compile Include="Messages\CloseDialogMessage.cs" />

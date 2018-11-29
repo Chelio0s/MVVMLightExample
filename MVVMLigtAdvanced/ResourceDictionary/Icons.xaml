@@ -1,3 +1,162 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-    
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Geometry x:Key="iconfinder_General_Office_37_3592853Geometry1">F1 M91,91z M0,0z M26.939,49.462C38.531,49.462 47.968,39.962 47.968,28.286 47.968,16.61 38.531,7.11 26.939,7.11 15.351,7.11 5.921,16.61 5.921,28.286 5.921,39.962 15.352,49.462 26.939,49.462z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_37_3592853Geometry2">F1 M91,91z M0,0z M44.877,46.202C40.291,50.845 33.945,53.727 26.939,53.727 20.005,53.727 13.72,50.899 9.146,46.334 3.513,49.049 0.732000000000005,53.084 0.732000000000005,58.668L0.732000000000005,78.19C3.55,79.753 10.41,85.458 27.285,85.458 44.314,85.458 51.412,79.88 53.525,78.37L53.525,58.665C53.525,52.974,50.666,48.897,44.877,46.202z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_37_3592853Geometry3">F1 M91,91z M0,0z M87.191,20.282L57.453,20.282C55.607,20.282 54.113,18.788 54.113,16.942 54.113,15.098 55.607,13.602 57.453,13.602L87.191,13.602C89.033,13.602 90.531,15.098 90.531,16.942 90.531,18.788 89.033,20.282 87.191,20.282z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_37_3592853Geometry4">F1 M91,91z M0,0z M87.191,39.185L57.453,39.185C55.607,39.185 54.113,37.689 54.113,35.845 54.113,33.999 55.607,32.505 57.453,32.505L87.191,32.505C89.033,32.505 90.531,33.999 90.531,35.845 90.531,37.688 89.033,39.185 87.191,39.185z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_37_3592853Geometry5">F1 M91,91z M0,0z M87.193,58.085L62.418,58.085C60.572,58.085 59.078,56.591 59.078,54.745 59.078,52.901 60.572,51.405 62.418,51.405L87.193,51.405C89.037,51.405 90.533,52.901 90.533,54.745 90.533,56.591 89.037,58.085 87.193,58.085z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_37_3592853Geometry6">F1 M91,91z M0,0z M87.193,76.987L62.418,76.987C60.572,76.987 59.078,75.491 59.078,73.647 59.078,71.801 60.572,70.307 62.418,70.307L87.193,70.307C89.037,70.307 90.533,71.801 90.533,73.647 90.533,75.491 89.037,76.987 87.193,76.987z</Geometry>
+    <DrawingGroup x:Key="iconfinder_General_Office_37_3592853DrawingGroup" ClipGeometry="M0,0 V91 H91 V0 H0 Z">
+        <DrawingGroup>
+            <DrawingGroup>
+                <GeometryDrawing Brush="#FF647F94" Geometry="{StaticResource iconfinder_General_Office_37_3592853Geometry1}" />
+                <GeometryDrawing Brush="#FF647F94" Geometry="{StaticResource iconfinder_General_Office_37_3592853Geometry2}" />
+            </DrawingGroup>
+            <GeometryDrawing Brush="#FF45596B" Geometry="{StaticResource iconfinder_General_Office_37_3592853Geometry3}" />
+            <GeometryDrawing Brush="#FF45596B" Geometry="{StaticResource iconfinder_General_Office_37_3592853Geometry4}" />
+            <GeometryDrawing Brush="#FF45596B" Geometry="{StaticResource iconfinder_General_Office_37_3592853Geometry5}" />
+            <GeometryDrawing Brush="#FF45596B" Geometry="{StaticResource iconfinder_General_Office_37_3592853Geometry6}" />
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="iconfinder_General_Office_37_3592853DrawingImage" Drawing="{StaticResource iconfinder_General_Office_37_3592853DrawingGroup}" />
+    <Geometry x:Key="iconfinder_General_Office_32_3592856Geometry1">F1 M91,91z M0,0z M11.502,34.972C16.117,34.972 19.869,31.22 19.869,26.611 19.869,22.002 16.117,18.25 11.502,18.25 6.895,18.25 3.145,22.002 3.145,26.611 3.145,31.22 6.895,34.972 11.502,34.972z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_32_3592856Geometry2">F1 M91,91z M0,0z M45.412,39.011C53.394,39.011 59.889,32.517 59.889,24.534 59.889,16.551 53.395,10.061 45.412,10.061 37.432,10.061 30.941,16.551 30.941,24.534 30.941,32.517 37.432,39.011 45.412,39.011z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_32_3592856Geometry3">F1 M91,91z M0,0z M57.699,40.481C54.291,43.112 50.039,44.694 45.412,44.694 40.838,44.694 36.635,43.145 33.248,40.571 29.209,42.801 27.059,46.212 27.059,50.526L27.059,77.643C29.803,79.473 37.299,83.922 45.414,83.922 56.18,83.922 62.125,79.617 64.049,77.92L64.049,50.524C64.049,46.251,61.793,42.733,57.699,40.481z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_32_3592856Geometry4">F1 M91,91z M0,0z M22.434,36.437C19.741,39.433 15.842,41.33 11.502,41.33 8.473,41.33 5.656,40.41 3.313,38.834 1.473,40.037 0.561000000000001,41.711 0.561000000000001,43.93L0.561000000000001,60.338C5.157,63.93,16.036,65.094,23.848,60.199L23.848,48.991C23.848,46.028 24.504,43.266 25.723,40.78 25.377,39.468 23.902,37.737 22.434,36.437z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_32_3592856Geometry5">F1 M91,91z M0,0z M79.703,34.972C75.088,34.972 71.336,31.22 71.336,26.611 71.336,22.002 75.088,18.25 79.703,18.25 84.31,18.25 88.06,22.002 88.06,26.611 88.06,31.22 84.311,34.972 79.703,34.972z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_32_3592856Geometry6">F1 M91,91z M0,0z M68.77,36.437C71.465,39.433 75.364,41.33 79.704,41.33 82.733,41.33 85.55,40.41 87.893,38.834 89.733,40.037 90.643,41.711 90.643,43.93L90.643,60.338C86.049,63.93,75.17,65.094,67.358,60.199L67.358,48.991C67.358,46.028 66.702,43.266 65.483,40.78 65.828,39.468 67.303,37.737 68.77,36.437z</Geometry>
+    <DrawingGroup x:Key="iconfinder_General_Office_32_3592856DrawingGroup" ClipGeometry="M0,0 V91 H91 V0 H0 Z">
+        <DrawingGroup>
+            <GeometryDrawing Brush="#FF647F94" Geometry="{StaticResource iconfinder_General_Office_32_3592856Geometry1}" />
+            <GeometryDrawing Brush="#FF45596B" Geometry="{StaticResource iconfinder_General_Office_32_3592856Geometry2}" />
+            <GeometryDrawing Brush="#FF45596B" Geometry="{StaticResource iconfinder_General_Office_32_3592856Geometry3}" />
+            <GeometryDrawing Brush="#FF647F94" Geometry="{StaticResource iconfinder_General_Office_32_3592856Geometry4}" />
+            <GeometryDrawing Brush="#FF647F94" Geometry="{StaticResource iconfinder_General_Office_32_3592856Geometry5}" />
+            <GeometryDrawing Brush="#FF647F94" Geometry="{StaticResource iconfinder_General_Office_32_3592856Geometry6}" />
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="iconfinder_General_Office_32_3592856DrawingImage" Drawing="{StaticResource iconfinder_General_Office_32_3592856DrawingGroup}" />
+    <Geometry x:Key="iconfinder_JD_27_2246843Geometry1">F1 M48,48z M0,0z M21.15329,27.49347C23.8614,27.43192 25.33856,23.12356 25.33856,23.12356 26.39561,22.70074 26.90832,20.73144 26.14997,19.86486 25.92051,19.60266 25.27948,19.15494 25.27948,19.15494 25.3238,18.94814 25.33857,18.72657 25.33857,18.50499 25.33857,16.20063 23.46259,14.32465 21.15823,14.32465 18.8391,14.32465 16.96312,16.20063 16.96312,18.50499 16.96312,18.72656 16.97789,18.94814 17.02221,19.15494 16.7379,19.35374 16.3861,19.60267 16.15664,19.86486 15.39828,20.73144 15.91099,22.70074 16.96805,23.12356 16.96802,23.12356 18.44518,27.43192 21.15329,27.49347</Geometry>
+    <Geometry x:Key="iconfinder_JD_27_2246843Geometry2">F1 M48,48z M0,0z M13.34408,29.8643L13.72814,29.64273 17.34717,27.50086C18.61752,28.84507 19.90264,29.48025 21.21731,29.48025 22.56152,29.48025 23.93527,28.80076 25.33857,27.50086L29.50414,29.62796 29.72571,29.73136C30.39043,30.08588 30.84835,30.78014 30.84835,31.5778 30.84835,32.72998 29.90297,33.67536 28.75079,33.67536L14.54057,33.67536C13.38839,33.67536 12.45778,32.72998 12.45778,31.5778 12.45778,30.86876 12.8123,30.24836 13.34408,29.8643L13.72814,29.64273</Geometry>
+    <Geometry x:Key="iconfinder_JD_27_2246843Geometry3">F1 M48,48z M0,0z M21.15329,27.49347C23.8614,27.43192 25.33856,23.12356 25.33856,23.12356 26.39561,22.70074 26.90832,20.73144 26.14997,19.86486 25.92051,19.60266 25.27948,19.15494 25.27948,19.15494 25.3238,18.94814 25.33857,18.72657 25.33857,18.50499 25.33857,16.20063 23.46259,14.32465 21.15823,14.32465 18.8391,14.32465 16.96312,16.20063 16.96312,18.50499 16.96312,18.72656 16.97789,18.94814 17.02221,19.15494 16.7379,19.35374 16.3861,19.60267 16.15664,19.86486 15.39828,20.73144 15.91099,22.70074 16.96805,23.12356 16.96802,23.12356 18.44518,27.43192 21.15329,27.49347z</Geometry>
+    <Geometry x:Key="iconfinder_JD_27_2246843Geometry4">F1 M48,48z M0,0z M13.34408,29.8643L13.72814,29.64273 17.34717,27.50086C18.61752,28.84507 19.90264,29.48025 21.21731,29.48025 22.56152,29.48025 23.93527,28.80076 25.33857,27.50086L29.50414,29.62796 29.72571,29.73136C30.39043,30.08588 30.84835,30.78014 30.84835,31.5778 30.84835,32.72998 29.90297,33.67536 28.75079,33.67536L14.54057,33.67536C13.38839,33.67536 12.45778,32.72998 12.45778,31.5778 12.45778,30.86876 12.8123,30.24836 13.34408,29.8643L13.72814,29.64273</Geometry>
+    <DrawingGroup x:Key="iconfinder_JD_27_2246843DrawingGroup" ClipGeometry="M0,0 V48 H48 V0 H0 Z">
+        <DrawingGroup>
+            <GeometryDrawing Brush="#FF4AA0EC" Geometry="{StaticResource iconfinder_JD_27_2246843Geometry1}" />
+            <GeometryDrawing Brush="#FF4AA0EC" Geometry="{StaticResource iconfinder_JD_27_2246843Geometry2}" />
+            <GeometryDrawing>
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#FF303030" Thickness="0.7" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                </GeometryDrawing.Pen>
+                <GeometryDrawing.Geometry>
+                    <LineGeometry StartPoint="32.3898,19.4176" EndPoint="32.3898,25.7224" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing>
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#FF303030" Thickness="0.7" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                </GeometryDrawing.Pen>
+                <GeometryDrawing.Geometry>
+                    <LineGeometry StartPoint="35.5422,22.57" EndPoint="29.2374,22.57" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Geometry="{StaticResource iconfinder_JD_27_2246843Geometry3}">
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#FF303030" Thickness="0.7" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                </GeometryDrawing.Pen>
+            </GeometryDrawing>
+            <GeometryDrawing Geometry="{StaticResource iconfinder_JD_27_2246843Geometry4}">
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#FF303030" Thickness="0.7" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                </GeometryDrawing.Pen>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="iconfinder_JD_27_2246843DrawingImage" Drawing="{StaticResource iconfinder_JD_27_2246843DrawingGroup}" />
+    <Geometry x:Key="iconfinder_JD_28_2246833Geometry1">F1 M48,48z M0,0z M21.15329,27.49347C23.8614,27.43192 25.33856,23.12356 25.33856,23.12356 26.39561,22.70074 26.90832,20.73144 26.14997,19.86486 25.92051,19.60266 25.27948,19.15494 25.27948,19.15494 25.3238,18.94814 25.33857,18.72657 25.33857,18.50499 25.33857,16.20063 23.46259,14.32465 21.15823,14.32465 18.8391,14.32465 16.96312,16.20063 16.96312,18.50499 16.96312,18.72656 16.97789,18.94814 17.02221,19.15494 16.7379,19.35374 16.3861,19.60267 16.15664,19.86486 15.39828,20.73144 15.91099,22.70074 16.96805,23.12356 16.96802,23.12356 18.44518,27.43192 21.15329,27.49347</Geometry>
+    <Geometry x:Key="iconfinder_JD_28_2246833Geometry2">F1 M48,48z M0,0z M13.34408,29.8643L13.72814,29.64273 17.34717,27.50086C18.61752,28.84507 19.90264,29.48025 21.21731,29.48025 22.56152,29.48025 23.93527,28.80076 25.33857,27.50086L29.50414,29.62796 29.72571,29.73136C30.39043,30.08588 30.84835,30.78014 30.84835,31.5778 30.84835,32.72998 29.90297,33.67536 28.75079,33.67536L14.54057,33.67536C13.38839,33.67536 12.45778,32.72998 12.45778,31.5778 12.45778,30.86876 12.8123,30.24836 13.34408,29.8643L13.72814,29.64273</Geometry>
+    <Geometry x:Key="iconfinder_JD_28_2246833Geometry3">F1 M48,48z M0,0z M21.15329,27.49347C23.8614,27.43192 25.33856,23.12356 25.33856,23.12356 26.39561,22.70074 26.90832,20.73144 26.14997,19.86486 25.92051,19.60266 25.27948,19.15494 25.27948,19.15494 25.3238,18.94814 25.33857,18.72657 25.33857,18.50499 25.33857,16.20063 23.46259,14.32465 21.15823,14.32465 18.8391,14.32465 16.96312,16.20063 16.96312,18.50499 16.96312,18.72656 16.97789,18.94814 17.02221,19.15494 16.7379,19.35374 16.3861,19.60267 16.15664,19.86486 15.39828,20.73144 15.91099,22.70074 16.96805,23.12356 16.96802,23.12356 18.44518,27.43192 21.15329,27.49347z</Geometry>
+    <Geometry x:Key="iconfinder_JD_28_2246833Geometry4">F1 M48,48z M0,0z M13.34408,29.8643L13.72814,29.64273 17.34717,27.50086C18.61752,28.84507 19.90264,29.48025 21.21731,29.48025 22.56152,29.48025 23.93527,28.80076 25.33857,27.50086L29.50414,29.62796 29.72571,29.73136C30.39043,30.08588 30.84835,30.78014 30.84835,31.5778 30.84835,32.72998 29.90297,33.67536 28.75079,33.67536L14.54057,33.67536C13.38839,33.67536 12.45778,32.72998 12.45778,31.5778 12.45778,30.86876 12.8123,30.24836 13.34408,29.8643L13.72814,29.64273</Geometry>
+    <Geometry x:Key="iconfinder_JD_28_2246833Geometry5">F1 M48,48z M0,0z M29.4102,23.3383L29.4102,23.3383 31.4005,25.35 34.7067,19.8872</Geometry>
+    <DrawingGroup x:Key="iconfinder_JD_28_2246833DrawingGroup" ClipGeometry="M0,0 V48 H48 V0 H0 Z">
+        <DrawingGroup>
+            <DrawingGroup>
+                <GeometryDrawing Brush="#FF4AA0EC" Geometry="{StaticResource iconfinder_JD_28_2246833Geometry1}" />
+                <GeometryDrawing Brush="#FF4AA0EC" Geometry="{StaticResource iconfinder_JD_28_2246833Geometry2}" />
+                <GeometryDrawing Geometry="{StaticResource iconfinder_JD_28_2246833Geometry3}">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="#FF303030" Thickness="0.7" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+                <GeometryDrawing Geometry="{StaticResource iconfinder_JD_28_2246833Geometry4}">
+                    <GeometryDrawing.Pen>
+                        <Pen Brush="#FF303030" Thickness="0.7" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                    </GeometryDrawing.Pen>
+                </GeometryDrawing>
+            </DrawingGroup>
+            <GeometryDrawing Geometry="{StaticResource iconfinder_JD_28_2246833Geometry5}">
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#FF303030" Thickness="0.7" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                </GeometryDrawing.Pen>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="iconfinder_JD_28_2246833DrawingImage" Drawing="{StaticResource iconfinder_JD_28_2246833DrawingGroup}" />
+    <Geometry x:Key="iconfinder_General_Office_23_3592861Geometry1">F1 M91,91z M0,0z M75.354,44.903L75.354,44.903 88.098,20.862 2.606,20.86 15.354,44.903z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_23_3592861Geometry2">F1 M91,91z M0,0z M79.494,48.999C79.012,49.911,78.064,50.481,77.031,50.481L58.461,50.481C57.174,56.54 51.789,61.1 45.354,61.1 38.919,61.1 33.532,56.539 32.243,50.481L13.676,50.481C12.643,50.481,11.696,49.911,11.213,48.999L0.756,29.278 0.756,87.548 83.832,87.548C87.201,87.548,89.941,84.806,89.941,81.437L89.941,29.288 79.494,48.999z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_23_3592861Geometry3">F1 M91,91z M0,0z M45.354,55.524C48.688,55.524,51.543,53.426,52.668,50.481L38.036,50.481C39.165,53.427,42.018,55.524,45.354,55.524z</Geometry>
+    <DrawingGroup x:Key="iconfinder_General_Office_23_3592861DrawingGroup" ClipGeometry="M0,0 V91 H91 V0 H0 Z">
+        <DrawingGroup>
+            <GeometryDrawing Brush="#FF95AEC2" Geometry="{StaticResource iconfinder_General_Office_23_3592861Geometry1}" />
+            <GeometryDrawing Brush="#FF6EC4A7">
+                <GeometryDrawing.Geometry>
+                    <RectangleGeometry RadiusX="0" RadiusY="0" Rect="33.227,5.843,24.253,9.441" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing Brush="#FF647F94" Geometry="{StaticResource iconfinder_General_Office_23_3592861Geometry2}" />
+            <GeometryDrawing Brush="#FF6EC4A7" Geometry="{StaticResource iconfinder_General_Office_23_3592861Geometry3}" />
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="iconfinder_General_Office_23_3592861DrawingImage" Drawing="{StaticResource iconfinder_General_Office_23_3592861DrawingGroup}" />
+    <Geometry x:Key="iconfinder_General_Office_34_3592855Geometry1">F1 M91,91z M0,0z M38.391,56.001C32.698,54.735 27.6,51.88 23.577,47.915 17.028,51.128 13.792,55.87 13.792,62.409L13.792,84.602C16.94,86.067,25.052,89.364,36.333,90.569L33.696,88.46C32.864,87.796,32.471,86.72,32.688,85.677L38.391,56.001z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_34_3592855Geometry2">F1 M91,91z M0,0z M45.01,51.079C58.793,51.079 70.01,39.784 70.01,25.905 70.01,12.026 58.793,0.733000000000001 45.01,0.733000000000001 31.235,0.733000000000001 20.028,12.026 20.028,25.905 20.028,39.784 31.234,51.079 45.01,51.079z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_34_3592855Geometry3">F1 M91,91z M0,0z M43.977,56.978L43.977,56.978 38.59,85.118 45.242,90.437 51.881,85.122 46.414,56.978z</Geometry>
+    <Geometry x:Key="iconfinder_General_Office_34_3592855Geometry4">F1 M91,91z M0,0z M66.475,47.896C62.532,51.791,57.543,54.605,51.983,55.912L57.786,85.67C58.005,86.717,57.614,87.793,56.784,88.461L54.288,90.457C61.245,89.627,68.784,87.809,76.686,84.498L76.686,62.409C76.686,55.862,73.309,51.114,66.475,47.896z</Geometry>
+    <DrawingGroup x:Key="iconfinder_General_Office_34_3592855DrawingGroup" ClipGeometry="M0,0 V91 H91 V0 H0 Z">
+        <DrawingGroup>
+            <GeometryDrawing Brush="#FF647F94" Geometry="{StaticResource iconfinder_General_Office_34_3592855Geometry1}" />
+            <GeometryDrawing Brush="#FF647F94" Geometry="{StaticResource iconfinder_General_Office_34_3592855Geometry2}" />
+            <GeometryDrawing Brush="#FF6EC4A7" Geometry="{StaticResource iconfinder_General_Office_34_3592855Geometry3}" />
+            <GeometryDrawing Brush="#FF647F94" Geometry="{StaticResource iconfinder_General_Office_34_3592855Geometry4}" />
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="iconfinder_General_Office_34_3592855DrawingImage" Drawing="{StaticResource iconfinder_General_Office_34_3592855DrawingGroup}" />
+    <Geometry x:Key="iconfinder_JD_03_2246826Geometry1">F1 M48,48z M0,0z M23.92587,25.76031L29.50615,25.76031C32.71414,25.76031 35.35601,28.37522 35.35601,31.58321 35.35601,32.55369 36.13779,33.33547 37.10827,33.33547 38.0518,33.33547 38.86053,32.55369 38.86053,31.58321 38.86053,26.43426 34.6551,22.25578 29.50615,22.25578L23.92587,22.25578 23.92587,15.81285C23.92587,14.57279,22.92843,13.79101,22.09273,14.33017L9.8269,22.49841C8.91033,23.11844,8.91033,24.8707,9.8269,25.49073L22.09273,33.65897C22.92843,34.22509,23.92587,33.41635,23.92587,32.17629L23.92587,25.76031z</Geometry>
+    <Geometry x:Key="iconfinder_JD_03_2246826Geometry2">F1 M48,48z M0,0z M23.92587,25.76031L29.50615,25.76031C32.71414,25.76031 35.35601,28.37522 35.35601,31.58321 35.35601,32.55369 36.13779,33.33547 37.10827,33.33547 38.0518,33.33547 38.86053,32.55369 38.86053,31.58321 38.86053,26.43426 34.6551,22.25578 29.50615,22.25578L23.92587,22.25578 23.92587,15.81285C23.92587,14.57279,22.92843,13.79101,22.09273,14.33017L9.8269,22.49841C8.91033,23.11844,8.91033,24.8707,9.8269,25.49073L22.09273,33.65897C22.92843,34.22509,23.92587,33.41635,23.92587,32.17629L23.92587,25.76031z</Geometry>
+    <DrawingGroup x:Key="iconfinder_JD_03_2246826DrawingGroup" ClipGeometry="M0,0 V48 H48 V0 H0 Z">
+        <DrawingGroup>
+            <GeometryDrawing Brush="#FF4AA0EC" Geometry="{StaticResource iconfinder_JD_03_2246826Geometry1}" />
+            <GeometryDrawing Geometry="{StaticResource iconfinder_JD_03_2246826Geometry2}">
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#FF303030" Thickness="0.7" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                </GeometryDrawing.Pen>
+            </GeometryDrawing>
+            <GeometryDrawing>
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#FF303030" Thickness="0.7" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                </GeometryDrawing.Pen>
+                <GeometryDrawing.Geometry>
+                    <LineGeometry StartPoint="12.4336,23.0311" EndPoint="18.0591,19.4294" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+            <GeometryDrawing>
+                <GeometryDrawing.Pen>
+                    <Pen Brush="#FF303030" Thickness="0.7" StartLineCap="Round" EndLineCap="Round" LineJoin="Round" />
+                </GeometryDrawing.Pen>
+                <GeometryDrawing.Geometry>
+                    <LineGeometry StartPoint="19.1224,18.7091" EndPoint="20.6317,17.8173" />
+                </GeometryDrawing.Geometry>
+            </GeometryDrawing>
+        </DrawingGroup>
+    </DrawingGroup>
+    <DrawingImage x:Key="iconfinder_JD_03_2246826DrawingImage" Drawing="{StaticResource iconfinder_JD_03_2246826DrawingGroup}" />
 </ResourceDictionary>

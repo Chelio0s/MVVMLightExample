@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MVVMLigtAdvanced.View"
+        xmlns:attach="clr-namespace:MVVMLigtAdvanced"
         mc:Ignorable="d"
         Title="Сотрудники" 
         Height="600"
@@ -11,7 +12,12 @@
         WindowStartupLocation="CenterScreen"
         DataContext="{Binding Employees, Source={StaticResource Locator}}">
     <Window.Resources>
-        <ResourceDictionary Source="../ResourceDictionary/MainDictionary.xaml"></ResourceDictionary>
+       <ResourceDictionary>
+           <ResourceDictionary.MergedDictionaries>
+               <ResourceDictionary Source="../ResourceDictionary/Icons.xaml"/>
+               <ResourceDictionary Source="../ResourceDictionary/MainDictionary.xaml"/>
+           </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -29,7 +35,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal" Grid.Row="1">
-            <Button Style="{StaticResource ButtonStyle}"  Command="{Binding ShowNewEmployeeCommand}">Новый сотрудник</Button>
+            <Button Style="{StaticResource ButtonStyle}" attach:AttachedProperty.ImageDataSource="{StaticResource iconfinder_General_Office_23_3592861DrawingImage}" Command="{Binding ShowNewEmployeeCommand}">Новый сотрудник</Button>
             <Button Style="{StaticResource ButtonStyle}"  Command="{Binding ShowEmployeeViewCommand}">Показать текущего</Button>
         </StackPanel>
     </Grid>
