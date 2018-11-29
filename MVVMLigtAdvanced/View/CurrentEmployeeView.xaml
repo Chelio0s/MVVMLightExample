@@ -1,0 +1,43 @@
+﻿<Window x:Class="MVVMLigtAdvanced.View.CurrentEmployeeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:command="http://www.galasoft.ch/mvvmlight"
+        mc:Ignorable="d"
+        Title="Сотрудник" SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterOwner"
+        DataContext="{Binding CurrentEmployee, Source={StaticResource Locator}}">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="#FFFAFAFA" Offset="0.9"/>
+            <GradientStop Color="#FF09B8C2" Offset="0"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <command:EventToCommand Command="{Binding WindowActivatedCommand}" PassEventArgsToCommand="True" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <StackPanel Margin="20">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="3" Padding="3" FontSize="14" FontStyle="Oblique">Имя</TextBlock>
+                <TextBox Margin="3" Padding="3" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Width="200"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="3" Padding="3" FontSize="14" FontStyle="Oblique">Должность</TextBlock>
+                <ComboBox Margin="3" ItemsSource="{Binding Posts}" SelectedItem="{Binding Post, UpdateSourceTrigger=PropertyChanged}" Width="155" ></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Border CornerRadius="2" BorderBrush="DarkBlue" BorderThickness="1" Margin="4" Background="LightGray">
+                    <Button  Width="70" BorderThickness="0" Background="Transparent" Command="{Binding SaveCommand}">Сохранить</Button>
+                </Border>
+                <Border CornerRadius="2" BorderBrush="DarkBlue" BorderThickness="1" Margin="4" Background="LightGray">
+                    <Button  Width="70" BorderThickness="0" Background="Transparent" Command="{Binding CancelCommand}">Отмена</Button>
+                </Border>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
